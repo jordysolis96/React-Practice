@@ -9,10 +9,80 @@
 //let is scoped to the block({}) it's defined in (const is prefered over let)
 //const variables can't be reassigned
 
-function sayHello(){
-    for (let i = 0; 1 > 5; i++){
-        console.log(i);
-    }
-}
+// function sayHello(){
+//     for (let i = 0; 1 > 5; i++){
+//         console.log(i);
+//     }
+// }
 
-sayHello();
+// sayHello();
+
+
+
+
+
+// const person = {
+//     name: 'Mosh',
+//     walk: function() {},
+//     talk() {}
+// };
+
+// person.talk();
+// person.name = '';
+
+// const targetMember = 'name';
+// person[targetMember.value] = 'John';
+
+
+
+
+// const person = {
+//     name: "Mosh",
+//     walk() {
+//         console.log(this);
+//     }
+// };
+
+// person.walk();
+
+// const walk = person.walk.bind(person);
+// walk();
+
+
+// Regular function
+// const square = function(number){
+//     return number * number;
+// }
+
+// Arrow function makes it so that there are no curly brackets or return keyword
+// const square = () => number * number;
+// console.log(square(5));
+
+
+
+// const jobs = [
+//     { id: 1, isActive: true },
+//     { id: 2, isActive: true },
+//     { id: 3, isActive: false },
+
+// ];
+
+// const activeJobs = jobs.filter(function(job) {return job.isActive; });
+// const activeJobs = jobs.filter(job => job.isActive );
+
+
+
+// Arrow functions don't rebind the this keyword
+const person = {
+    talk(){
+        setTimeout(() => {
+            console.log("this", this);
+        }, 1000)
+    }
+};
+
+person.talk();
+
+
+
+
