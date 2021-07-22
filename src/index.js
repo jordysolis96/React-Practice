@@ -73,16 +73,32 @@
 
 
 // Arrow functions don't rebind the this keyword
-const person = {
-    talk(){
-        setTimeout(() => {
-            console.log("this", this);
-        }, 1000)
-    }
-};
+// const person = {
+//     talk(){
+//         setTimeout(() => {
+//             console.log("this", this);
+//         }, 1000)
+//     }
+// };
 
-person.talk();
-
-
+// person.talk();
 
 
+//Array map
+// const colors = ['red', 'green', 'blue'];
+// const items = colors.map(color => `<li>${color}<li>`);
+// console.log(items);
+
+
+//object destructuring
+// const address = {
+//     street: '',
+//     city: '',
+//     country: '',
+// };
+
+// const street = address.street;
+// const city = address.city;
+// const country = address.country;
+// //refactor 
+// const {street: st } = address;
