@@ -1,5 +1,11 @@
 // import React from 'react';
 // import ReactDOM from 'react-dom';
+import Teacher, { promote } from './teacher.js';
+import React, { Component } from 'react';
+
+// Default -> import .. from '';
+//Named -> import { ... } from '';
+
 
 // const element = <h1>Hello World</h1>;
 
@@ -102,3 +108,30 @@
 // const country = address.country;
 // //refactor 
 // const {street: st } = address;
+
+
+
+
+//Spread Operator
+// const first = [1, 2, 3];
+// const second = [4, 5, 6];
+// 
+// const combined = first.concat(second);
+// const combined = [...first, 'a',...secind, 'b'];
+// 
+// const clone = [...first];
+// console.log(first);
+// console.log(clone);
+// 
+// const first = { name: 'Mosh'};
+// const second = { job: 'Instructor'};
+// 
+// const combined = {...first, ...second, location: 'Australia'};
+// console.log(combined);
+//how to spread the first object
+// const clone = { ...first};
+
+
+const teacher = new Teacher("Mosh", "MSc");
+teacher.teach();
+
